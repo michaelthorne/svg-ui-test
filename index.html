@@ -17,6 +17,50 @@
             font: 100%/1.5 sans-serif;
         }
 
+        header {
+            background-color: #111;
+            margin-bottom: 2em;
+            overflow: hidden;
+            padding: 1em;
+        }
+
+        header > a {
+            float: left;
+        }
+
+        header nav {
+            display: none;
+        }
+
+        @media all and (min-width: 37.5em) {
+
+            header > a {
+                margin-right: 1em;
+            }
+
+            header nav {
+                display: block;
+                padding-top: 0.8125em;
+            }
+        }
+
+        nav ol {
+            list-style: none;
+        }
+
+        nav li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media all and (min-width: 37.5em) {
+
+            nav li {
+                display: inline-block;
+                margin-right: 1em;
+            }
+        }
+
         .wrapper {
             margin-right: auto;
             margin-left: auto;
@@ -70,11 +114,17 @@
                 margin-bottom: 4em;
             }
         }
+
+        footer {
+            background-color: #ccc;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="http://placehold.it/75x75" width="75" height="75" alt=""></a>
+        <a href="index.html"><img src="http://placehold.it/50x50" width="50" height="50" alt=""></a>
         <nav>
             <ol>
                 <li><a href="index.html">Home</a></li>
@@ -154,17 +204,16 @@
     </main>
 
     <footer>
-        <nav>
-            <ol>
-                <li><a href="index.html">Terms of Service</a></li>
-                <li><a href="index.html">Privacy Policy</a></li>
-            </ol>
-
-            <ol>
-                <li><a href="index.html">Careers</a></li>
-                <li><a href="index.html">Help & Support</a></li>
-            </ol>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ol>
+                    <li><a href="index.html">Terms of Service</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="index.html">Careers</a></li>
+                    <li><a href="index.html">Help & Support</a></li>
+                </ol>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
