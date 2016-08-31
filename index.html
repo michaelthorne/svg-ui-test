@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SVG UI Test</title>
+
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 100%/1.5 sans-serif;
+        }
+
+        .wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 75em;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+        .blocks {
+
+        }
+
+        .block {
+            margin-bottom: 2em;
+            position: relative;
+        }
+
+        .block img {
+            height: auto;
+            width: 100%;
+        }
+
+        .block button {
+            border: 0;
+            padding: 0;
+            position: absolute;
+            right: 2em;
+            top: 1em;
+        }
+        
+        @media all and (min-width: 37.5em) {
+
+            .blocks {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -1em;
+                margin-left: -1em;
+            }
+
+            .block {
+                flex: 0 0 50%;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+
+        @media all and (min-width: 45em) {
+
+            .block {
+                flex-basis: 25%;
+                margin-bottom: 4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="http://placehold.it/75x75" width="75" height="75" alt=""></a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <div class="blocks">
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil</p>
+                        <button>Add to Favourites</button>
+                    </div>
+
+                    <div class="block">
+                        <img src="http://placehold.it/400x235" width="400" height="235" alt="">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <button>Add to Favourites</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ol>
+                <li><a href="index.html">Terms of Service</a></li>
+                <li><a href="index.html">Privacy Policy</a></li>
+            </ol>
+
+            <ol>
+                <li><a href="index.html">Careers</a></li>
+                <li><a href="index.html">Help & Support</a></li>
+            </ol>
+        </nav>
+    </footer>
+</body>
+</html>
