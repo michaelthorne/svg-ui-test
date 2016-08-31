@@ -74,6 +74,7 @@
         }
 
         .block {
+            background-color: #f5f5f5;
             margin-bottom: 2em;
             position: relative;
         }
@@ -81,6 +82,13 @@
         .block img {
             height: auto;
             width: 100%;
+        }
+
+        .block p {
+            margin-bottom: 0;
+            padding-right: 1em;
+            padding-bottom: 1em;
+            padding-left: 1em;
         }
 
         .block button {
@@ -101,9 +109,9 @@
             }
 
             .block {
-                flex: 0 0 50%;
-                padding-right: 1em;
-                padding-left: 1em;
+                flex: 0 0 calc(50% - 2em);
+                margin-right: 1em;
+                margin-left: 1em;
             }
         }
 
