@@ -32,6 +32,35 @@
             display: none;
         }
 
+        header button {
+            background-color: transparent;
+            border: 0;
+            float: right;
+            margin-top: 1em;
+        }
+
+        header button:focus .icon,
+        header button:hover .icon {
+            fill: red;
+        }
+
+        header button .icon {
+            fill: #fff;
+            height: 2em;
+            width: 2em;
+        }
+
+        .icon {
+            display: inline-block;
+            fill: currentColor;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            transition: fill 0.25s;
+            vertical-align: middle;
+            width: 1em;
+        }
+
         @media all and (min-width: 37.5em) {
 
             header > a {
@@ -54,6 +83,10 @@
         }
 
         @media all and (min-width: 37.5em) {
+
+            header button {
+                display: none;
+            }
 
             nav li {
                 display: inline-block;
@@ -141,6 +174,12 @@
                 <li><a href="index.html">Contact Us</a></li>
             </ol>
         </nav>
+
+        <button>
+            <svg viewBox="0 0 24 24" class="icon">
+                <svg class="icon icon-dehaze"><use xlink:href="svg/icons.svg#icon-menu"></use></svg>
+            </svg>
+        </button>
     </header>
 
     <main>
