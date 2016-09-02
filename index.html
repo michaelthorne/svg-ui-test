@@ -51,7 +51,7 @@
         }
 
         header button .icon {
-            fill: #fff;
+            color: #fff;
             height: 1.5em;
             transition: fill 0.25s;
             width: 1.5em;
@@ -97,6 +97,12 @@
         nav li a {
             color: #fff;
             text-decoration: none;
+            transition: color 0.25s;
+        }
+
+        nav li a:focus,
+        nav li a:hover {
+            color: #0074d9;
         }
 
         @media all and (min-width: 37.5em) {
@@ -178,7 +184,25 @@
             padding-top: 1em;
             padding-bottom: 1em;
         }
+
+        footer nav li a {
+            color: #111;
+        }
+
+        .u-visuallyhidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
     </style>
+
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 </head>
 <body>
     <header>
@@ -194,6 +218,7 @@
 
         <button>
             <svg class="icon icon-menu"><use xlink:href="svg/icons.svg#icon-menu"></use></svg>
+            <span class="u-visuallyhidden">Menu</span>
         </button>
     </header>
 
