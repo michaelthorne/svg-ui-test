@@ -28,6 +28,10 @@
             float: left;
         }
 
+        header > a img {
+            display: block;
+        }
+
         header nav {
             display: none;
         }
@@ -35,18 +39,27 @@
         header button {
             background-color: transparent;
             border: 0;
+            cursor: pointer;
             float: right;
+            height: 2em;
             margin-top: 1em;
+            width: 2em;
+        }
+
+        header button:focus,
+        header button:hover {
+            outline: 0;
         }
 
         header button:focus .icon,
         header button:hover .icon {
-            fill: red;
+            fill: #0074d9;
         }
 
         header button .icon {
             fill: #fff;
             height: 2em;
+            transition: fill 0.25s;
             width: 2em;
         }
 
@@ -54,17 +67,15 @@
             display: inline-block;
             fill: currentColor;
             height: 1em;
-            stroke-width: 0;
             stroke: currentColor;
-            transition: fill 0.25s;
-            vertical-align: middle;
+            stroke-width: 0;
             width: 1em;
         }
 
         @media all and (min-width: 37.5em) {
 
             header > a {
-                margin-right: 1em;
+                margin-right: 2em;
             }
 
             header nav {
@@ -176,9 +187,7 @@
         </nav>
 
         <button>
-            <svg viewBox="0 0 24 24" class="icon">
-                <svg class="icon icon-dehaze"><use xlink:href="svg/icons.svg#icon-menu"></use></svg>
-            </svg>
+            <svg class="icon icon-menu"><use xlink:href="svg/icons.svg#icon-menu"></use></svg>
         </button>
     </header>
 
